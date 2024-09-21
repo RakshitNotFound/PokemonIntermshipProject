@@ -1,0 +1,74 @@
+/* src/App.css */
+body {
+  background-color: #121212;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #ffcb05;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+input {
+  padding: 12px;
+  font-size: 18px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  width: 250px;
+  transition: 0.3s;
+}
+
+input:focus {
+  box-shadow: 0 0 10px #ffcb05;
+}
+
+.pokemon-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pokemon-card {
+  background-color: #1e1e1e;
+  border: 2px solid #333;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 15px;
+  text-align: center;
+  width: 160px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pokemon-card img {
+  width: 120px;
+  height: 120px;
+  transition: transform 0.3s ease;
+}
+
+.pokemon-card h2 {
+  font-size: 20px;
+  margin-top: 10px;
+  text-transform: capitalize;
+  color: #ffcb05;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.pokemon-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(255, 203, 5, 0.5);
+}
+
+.pokemon-card:hover img {
+  transform: scale(1.1);
+}
